@@ -1,6 +1,6 @@
 ﻿namespace ESMSystem.Views
 {
-    partial class FrmCategories
+    partial class FrmCustomers
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label5 = new System.Windows.Forms.Label();
+            this.dgCustomerList = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.UpdateBtn = new System.Windows.Forms.Button();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.NewBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtCategoryName = new System.Windows.Forms.TextBox();
+            this.txtCusName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtCategoryId = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dgCategoryList = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtCusID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtCusPhone = new System.Windows.Forms.TextBox();
+            this.cboGender = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCustomerList)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgCategoryList)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline);
+            this.label5.Location = new System.Drawing.Point(247, 427);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(133, 25);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Customer LIst";
+            // 
+            // dgCustomerList
+            // 
+            this.dgCustomerList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgCustomerList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCustomerList.Location = new System.Drawing.Point(252, 455);
+            this.dgCustomerList.Name = "dgCustomerList";
+            this.dgCustomerList.RowHeadersWidth = 51;
+            this.dgCustomerList.RowTemplate.Height = 24;
+            this.dgCustomerList.Size = new System.Drawing.Size(1048, 322);
+            this.dgCustomerList.TabIndex = 15;
+            this.dgCustomerList.Click += new System.EventHandler(this.dgCustomerList_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(247, 159);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(236, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Customer Management";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.cboGender);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtCusPhone);
             this.groupBox1.Controls.Add(this.DeleteBtn);
             this.groupBox1.Controls.Add(this.UpdateBtn);
             this.groupBox1.Controls.Add(this.SaveBtn);
             this.groupBox1.Controls.Add(this.NewBtn);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtCategoryName);
+            this.groupBox1.Controls.Add(this.txtCusName);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtCategoryId);
-            this.groupBox1.Location = new System.Drawing.Point(266, 194);
+            this.groupBox1.Controls.Add(this.txtCusID);
+            this.groupBox1.Location = new System.Drawing.Point(252, 190);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(797, 202);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.Size = new System.Drawing.Size(1048, 202);
+            this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
             // DeleteBtn
@@ -116,19 +156,19 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label4.Location = new System.Drawing.Point(298, 41);
+            this.label4.Location = new System.Drawing.Point(287, 41);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 18);
             this.label4.TabIndex = 7;
             this.label4.Text = "Category Name";
             // 
-            // txtCategoryName
+            // txtCusName
             // 
-            this.txtCategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtCategoryName.Location = new System.Drawing.Point(301, 62);
-            this.txtCategoryName.Name = "txtCategoryName";
-            this.txtCategoryName.Size = new System.Drawing.Size(210, 24);
-            this.txtCategoryName.TabIndex = 6;
+            this.txtCusName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtCusName.Location = new System.Drawing.Point(290, 62);
+            this.txtCusName.Name = "txtCusName";
+            this.txtCusName.Size = new System.Drawing.Size(210, 24);
+            this.txtCusName.TabIndex = 6;
             // 
             // label3
             // 
@@ -140,80 +180,87 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Category ID";
             // 
-            // txtCategoryId
+            // txtCusID
             // 
-            this.txtCategoryId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtCategoryId.Location = new System.Drawing.Point(33, 62);
-            this.txtCategoryId.Name = "txtCategoryId";
-            this.txtCategoryId.Size = new System.Drawing.Size(210, 24);
-            this.txtCategoryId.TabIndex = 0;
+            this.txtCusID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtCusID.Location = new System.Drawing.Point(33, 62);
+            this.txtCusID.Name = "txtCusID";
+            this.txtCusID.Size = new System.Drawing.Size(210, 24);
+            this.txtCusID.TabIndex = 0;
             // 
-            // label2
+            // label6
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(261, 163);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(231, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Category Management";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label6.Location = new System.Drawing.Point(798, 39);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(112, 18);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Category Name";
             // 
-            // dgCategoryList
+            // txtCusPhone
             // 
-            this.dgCategoryList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgCategoryList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgCategoryList.Location = new System.Drawing.Point(266, 459);
-            this.dgCategoryList.Name = "dgCategoryList";
-            this.dgCategoryList.RowHeadersWidth = 51;
-            this.dgCategoryList.RowTemplate.Height = 24;
-            this.dgCategoryList.Size = new System.Drawing.Size(841, 346);
-            this.dgCategoryList.TabIndex = 6;
-            this.dgCategoryList.Click += new System.EventHandler(this.dgCategoryList_Click);
+            this.txtCusPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtCusPhone.Location = new System.Drawing.Point(801, 60);
+            this.txtCusPhone.Name = "txtCusPhone";
+            this.txtCusPhone.Size = new System.Drawing.Size(210, 24);
+            this.txtCusPhone.TabIndex = 12;
             // 
-            // label5
+            // cboGender
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline);
-            this.label5.Location = new System.Drawing.Point(261, 431);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 25);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Category LIst";
+            this.cboGender.FormattingEnabled = true;
+            this.cboGender.Location = new System.Drawing.Point(546, 62);
+            this.cboGender.Name = "cboGender";
+            this.cboGender.Size = new System.Drawing.Size(203, 24);
+            this.cboGender.TabIndex = 14;
             // 
-            // FrmCategories
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label7.Location = new System.Drawing.Point(543, 39);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 18);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Category Name";
+            // 
+            // FrmCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1555, 881);
+            this.ClientSize = new System.Drawing.Size(1537, 834);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dgCategoryList);
+            this.Controls.Add(this.dgCustomerList);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmCategories";
-            this.Text = "FrmCategories";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmCategories_Load);
+            this.Name = "FrmCustomers";
+            this.Text = "FrmCustomers";
+            this.Load += new System.EventHandler(this.FrmCustomers_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgCustomerList)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgCategoryList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtCategoryId;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgCustomerList;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Button NewBtn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCategoryName;
+        private System.Windows.Forms.TextBox txtCusName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dgCategoryList;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCusID;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtCusPhone;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cboGender;
     }
 }

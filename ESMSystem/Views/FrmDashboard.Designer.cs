@@ -52,9 +52,9 @@
             this.SidebarCustomer = new System.Windows.Forms.Label();
             this.SidebarCustomerPic = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.CloseBtn = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutPicture)).BeginInit();
@@ -101,7 +101,7 @@
             // LogoutLabel
             // 
             this.LogoutLabel.AutoSize = true;
-            this.LogoutLabel.Location = new System.Drawing.Point(42, 12);
+            this.LogoutLabel.Location = new System.Drawing.Point(42, 13);
             this.LogoutLabel.Name = "LogoutLabel";
             this.LogoutLabel.Size = new System.Drawing.Size(80, 20);
             this.LogoutLabel.TabIndex = 3;
@@ -162,11 +162,11 @@
             // SidebarDashboard
             // 
             this.SidebarDashboard.AutoSize = true;
-            this.SidebarDashboard.Location = new System.Drawing.Point(42, 12);
+            this.SidebarDashboard.Location = new System.Drawing.Point(42, 13);
             this.SidebarDashboard.Name = "SidebarDashboard";
-            this.SidebarDashboard.Size = new System.Drawing.Size(59, 20);
+            this.SidebarDashboard.Size = new System.Drawing.Size(118, 20);
             this.SidebarDashboard.TabIndex = 3;
-            this.SidebarDashboard.Text = "ITEMS";
+            this.SidebarDashboard.Text = "DASHBOARD";
             // 
             // SidebarDashboardPic
             // 
@@ -225,6 +225,7 @@
             this.SidebarBilling.Size = new System.Drawing.Size(74, 20);
             this.SidebarBilling.TabIndex = 3;
             this.SidebarBilling.Text = "BILLING";
+            this.SidebarBilling.Click += new System.EventHandler(this.SidebarBilling_Click);
             // 
             // SidebarBillingPic
             // 
@@ -235,6 +236,7 @@
             this.SidebarBillingPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SidebarBillingPic.TabIndex = 0;
             this.SidebarBillingPic.TabStop = false;
+            this.SidebarBillingPic.Click += new System.EventHandler(this.SidebarBillingPic_Click);
             // 
             // CategoriesPanel
             // 
@@ -248,7 +250,7 @@
             // SidebarCategories
             // 
             this.SidebarCategories.AutoSize = true;
-            this.SidebarCategories.Location = new System.Drawing.Point(42, 12);
+            this.SidebarCategories.Location = new System.Drawing.Point(42, 13);
             this.SidebarCategories.Name = "SidebarCategories";
             this.SidebarCategories.Size = new System.Drawing.Size(117, 20);
             this.SidebarCategories.TabIndex = 3;
@@ -283,6 +285,7 @@
             this.SidebarCustomer.Size = new System.Drawing.Size(104, 20);
             this.SidebarCustomer.TabIndex = 3;
             this.SidebarCustomer.Text = "CUSTOMER";
+            this.SidebarCustomer.Click += new System.EventHandler(this.SidebarCustomer_Click);
             // 
             // SidebarCustomerPic
             // 
@@ -293,6 +296,7 @@
             this.SidebarCustomerPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SidebarCustomerPic.TabIndex = 0;
             this.SidebarCustomerPic.TabStop = false;
+            this.SidebarCustomerPic.Click += new System.EventHandler(this.SidebarCustomerPic_Click);
             // 
             // panel2
             // 
@@ -304,6 +308,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1314, 100);
             this.panel2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(618, 29);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "ELECTRONIC SALE SUPPLY MANAGEMENT SYSTEM";
             // 
             // CloseBtn
             // 
@@ -323,16 +337,6 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1555, 881);
             this.MainPanel.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(618, 29);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "ELECTRONIC SALE SUPPLY MANAGEMENT SYSTEM";
             // 
             // FrmDashboard
             // 

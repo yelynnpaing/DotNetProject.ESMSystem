@@ -78,5 +78,25 @@ namespace ESMSystem.Views
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
         }
+
+        private void SidebarCustomerPic_Click(object sender, EventArgs e)
+        {
+            LoadForm(new FrmCustomers());
+        }
+
+        private void SidebarCustomer_Click(object sender, EventArgs e)
+        {
+            LoadForm(new FrmCustomers());
+        }
+
+        private void SidebarBillingPic_Click(object sender, EventArgs e)
+        {
+            LoadForm(new FrmBilling());
+        }
+
+        private void SidebarBilling_Click(object sender, EventArgs e)
+        {
+            LoadForm(new FrmBilling());
+        }
     }
 }
