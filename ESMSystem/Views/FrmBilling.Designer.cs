@@ -28,33 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBilling));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.CloseBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.LogoutLabel = new System.Windows.Forms.Label();
-            this.LogoutPicture = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.LogoLabel = new System.Windows.Forms.Label();
-            this.pboxLogo = new System.Windows.Forms.PictureBox();
-            this.DashboardPanel = new System.Windows.Forms.Panel();
-            this.SidebarDashboard = new System.Windows.Forms.Label();
-            this.SidebarDashboardPic = new System.Windows.Forms.PictureBox();
-            this.ItemsPanel = new System.Windows.Forms.Panel();
-            this.SidebarItems = new System.Windows.Forms.Label();
-            this.SidebarItemsPic = new System.Windows.Forms.PictureBox();
-            this.BillingPanel = new System.Windows.Forms.Panel();
-            this.SidebarBilling = new System.Windows.Forms.Label();
-            this.SidebarBillingPic = new System.Windows.Forms.PictureBox();
-            this.CategoriesPanel = new System.Windows.Forms.Panel();
-            this.SidebarCategories = new System.Windows.Forms.Label();
-            this.SidebarCategoriesPic = new System.Windows.Forms.PictureBox();
-            this.CustomerPanel = new System.Windows.Forms.Panel();
-            this.SidebarCustomer = new System.Windows.Forms.Label();
-            this.SidebarCustomerPic = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtTotalCost = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboItems = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,304 +45,38 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtInvoiceNum = new System.Windows.Forms.TextBox();
             this.lvOrderList = new System.Windows.Forms.ListView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgItemList = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.DeleteBtn = new System.Windows.Forms.Button();
-            this.UpdateBtn = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.cboCustomers = new System.Windows.Forms.ComboBox();
+            this.PrintBillBtn = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtBillInvoiceNum = new System.Windows.Forms.TextBox();
+            this.txtTotalBill = new System.Windows.Forms.TextBox();
+            this.SaveBillBtn = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cboPaymentStatus = new System.Windows.Forms.ComboBox();
+            this.txtPaymentType = new System.Windows.Forms.Label();
+            this.radioEMoney = new System.Windows.Forms.RadioButton();
+            this.radioCard = new System.Windows.Forms.RadioButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.radioCash = new System.Windows.Forms.RadioButton();
+            this.InvoicedateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.cboOrderStatus = new System.Windows.Forms.ComboBox();
-            this.InvoicedateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.radioCash = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.radioCard = new System.Windows.Forms.RadioButton();
-            this.radioEMoney = new System.Windows.Forms.RadioButton();
-            this.SaveBillBtn = new System.Windows.Forms.Button();
-            this.txtTotalBill = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtBillInvoiceNum = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.txtPaymentType = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cboPaymentStatus = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.DeleteBtn = new System.Windows.Forms.Button();
+            this.cboCustomers = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutPicture)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).BeginInit();
-            this.DashboardPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarDashboardPic)).BeginInit();
-            this.ItemsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarItemsPic)).BeginInit();
-            this.BillingPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarBillingPic)).BeginInit();
-            this.CategoriesPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarCategoriesPic)).BeginInit();
-            this.CustomerPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarCustomerPic)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgItemList)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.CloseBtn);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(241, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1294, 100);
-            this.panel2.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(618, 29);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "ELECTRONIC SALE SUPPLY MANAGEMENT SYSTEM";
-            // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Red;
-            this.CloseBtn.ForeColor = System.Drawing.Color.White;
-            this.CloseBtn.Location = new System.Drawing.Point(1224, 37);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(54, 32);
-            this.CloseBtn.TabIndex = 0;
-            this.CloseBtn.Text = "X";
-            this.CloseBtn.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.DashboardPanel);
-            this.panel1.Controls.Add(this.ItemsPanel);
-            this.panel1.Controls.Add(this.BillingPanel);
-            this.panel1.Controls.Add(this.CategoriesPanel);
-            this.panel1.Controls.Add(this.CustomerPanel);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 878);
-            this.panel1.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.LogoutLabel);
-            this.panel4.Controls.Add(this.LogoutPicture);
-            this.panel4.Location = new System.Drawing.Point(28, 812);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(207, 46);
-            this.panel4.TabIndex = 8;
-            // 
-            // LogoutLabel
-            // 
-            this.LogoutLabel.AutoSize = true;
-            this.LogoutLabel.Location = new System.Drawing.Point(42, 17);
-            this.LogoutLabel.Name = "LogoutLabel";
-            this.LogoutLabel.Size = new System.Drawing.Size(63, 16);
-            this.LogoutLabel.TabIndex = 3;
-            this.LogoutLabel.Text = "LOGOUT";
-            // 
-            // LogoutPicture
-            // 
-            this.LogoutPicture.Image = ((System.Drawing.Image)(resources.GetObject("LogoutPicture.Image")));
-            this.LogoutPicture.Location = new System.Drawing.Point(3, 3);
-            this.LogoutPicture.Name = "LogoutPicture";
-            this.LogoutPicture.Size = new System.Drawing.Size(33, 39);
-            this.LogoutPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoutPicture.TabIndex = 0;
-            this.LogoutPicture.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.LogoLabel);
-            this.panel3.Controls.Add(this.pboxLogo);
-            this.panel3.Location = new System.Drawing.Point(45, 6);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(160, 114);
-            this.panel3.TabIndex = 2;
-            // 
-            // LogoLabel
-            // 
-            this.LogoLabel.AutoSize = true;
-            this.LogoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LogoLabel.Location = new System.Drawing.Point(6, 82);
-            this.LogoLabel.Name = "LogoLabel";
-            this.LogoLabel.Size = new System.Drawing.Size(150, 22);
-            this.LogoLabel.TabIndex = 4;
-            this.LogoLabel.Text = "ESSM SYSTEM";
-            // 
-            // pboxLogo
-            // 
-            this.pboxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pboxLogo.Image")));
-            this.pboxLogo.Location = new System.Drawing.Point(22, 3);
-            this.pboxLogo.Name = "pboxLogo";
-            this.pboxLogo.Size = new System.Drawing.Size(115, 76);
-            this.pboxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pboxLogo.TabIndex = 0;
-            this.pboxLogo.TabStop = false;
-            // 
-            // DashboardPanel
-            // 
-            this.DashboardPanel.Controls.Add(this.SidebarDashboard);
-            this.DashboardPanel.Controls.Add(this.SidebarDashboardPic);
-            this.DashboardPanel.Location = new System.Drawing.Point(28, 402);
-            this.DashboardPanel.Name = "DashboardPanel";
-            this.DashboardPanel.Size = new System.Drawing.Size(207, 46);
-            this.DashboardPanel.TabIndex = 7;
-            // 
-            // SidebarDashboard
-            // 
-            this.SidebarDashboard.AutoSize = true;
-            this.SidebarDashboard.Location = new System.Drawing.Point(42, 13);
-            this.SidebarDashboard.Name = "SidebarDashboard";
-            this.SidebarDashboard.Size = new System.Drawing.Size(93, 16);
-            this.SidebarDashboard.TabIndex = 3;
-            this.SidebarDashboard.Text = "DASHBOARD";
-            // 
-            // SidebarDashboardPic
-            // 
-            this.SidebarDashboardPic.Image = ((System.Drawing.Image)(resources.GetObject("SidebarDashboardPic.Image")));
-            this.SidebarDashboardPic.Location = new System.Drawing.Point(3, 3);
-            this.SidebarDashboardPic.Name = "SidebarDashboardPic";
-            this.SidebarDashboardPic.Size = new System.Drawing.Size(33, 39);
-            this.SidebarDashboardPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SidebarDashboardPic.TabIndex = 0;
-            this.SidebarDashboardPic.TabStop = false;
-            // 
-            // ItemsPanel
-            // 
-            this.ItemsPanel.Controls.Add(this.SidebarItems);
-            this.ItemsPanel.Controls.Add(this.SidebarItemsPic);
-            this.ItemsPanel.Location = new System.Drawing.Point(28, 194);
-            this.ItemsPanel.Name = "ItemsPanel";
-            this.ItemsPanel.Size = new System.Drawing.Size(207, 46);
-            this.ItemsPanel.TabIndex = 2;
-            // 
-            // SidebarItems
-            // 
-            this.SidebarItems.AutoSize = true;
-            this.SidebarItems.Location = new System.Drawing.Point(42, 14);
-            this.SidebarItems.Name = "SidebarItems";
-            this.SidebarItems.Size = new System.Drawing.Size(48, 16);
-            this.SidebarItems.TabIndex = 3;
-            this.SidebarItems.Text = "ITEMS";
-            // 
-            // SidebarItemsPic
-            // 
-            this.SidebarItemsPic.Image = ((System.Drawing.Image)(resources.GetObject("SidebarItemsPic.Image")));
-            this.SidebarItemsPic.Location = new System.Drawing.Point(3, 3);
-            this.SidebarItemsPic.Name = "SidebarItemsPic";
-            this.SidebarItemsPic.Size = new System.Drawing.Size(33, 39);
-            this.SidebarItemsPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SidebarItemsPic.TabIndex = 0;
-            this.SidebarItemsPic.TabStop = false;
-            // 
-            // BillingPanel
-            // 
-            this.BillingPanel.Controls.Add(this.SidebarBilling);
-            this.BillingPanel.Controls.Add(this.SidebarBillingPic);
-            this.BillingPanel.Location = new System.Drawing.Point(28, 350);
-            this.BillingPanel.Name = "BillingPanel";
-            this.BillingPanel.Size = new System.Drawing.Size(207, 46);
-            this.BillingPanel.TabIndex = 6;
-            // 
-            // SidebarBilling
-            // 
-            this.SidebarBilling.AutoSize = true;
-            this.SidebarBilling.Location = new System.Drawing.Point(42, 16);
-            this.SidebarBilling.Name = "SidebarBilling";
-            this.SidebarBilling.Size = new System.Drawing.Size(56, 16);
-            this.SidebarBilling.TabIndex = 3;
-            this.SidebarBilling.Text = "BILLING";
-            // 
-            // SidebarBillingPic
-            // 
-            this.SidebarBillingPic.Image = ((System.Drawing.Image)(resources.GetObject("SidebarBillingPic.Image")));
-            this.SidebarBillingPic.Location = new System.Drawing.Point(3, 3);
-            this.SidebarBillingPic.Name = "SidebarBillingPic";
-            this.SidebarBillingPic.Size = new System.Drawing.Size(33, 39);
-            this.SidebarBillingPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SidebarBillingPic.TabIndex = 0;
-            this.SidebarBillingPic.TabStop = false;
-            // 
-            // CategoriesPanel
-            // 
-            this.CategoriesPanel.Controls.Add(this.SidebarCategories);
-            this.CategoriesPanel.Controls.Add(this.SidebarCategoriesPic);
-            this.CategoriesPanel.Location = new System.Drawing.Point(28, 246);
-            this.CategoriesPanel.Name = "CategoriesPanel";
-            this.CategoriesPanel.Size = new System.Drawing.Size(207, 46);
-            this.CategoriesPanel.TabIndex = 4;
-            // 
-            // SidebarCategories
-            // 
-            this.SidebarCategories.AutoSize = true;
-            this.SidebarCategories.Location = new System.Drawing.Point(42, 14);
-            this.SidebarCategories.Name = "SidebarCategories";
-            this.SidebarCategories.Size = new System.Drawing.Size(94, 16);
-            this.SidebarCategories.TabIndex = 3;
-            this.SidebarCategories.Text = "CATEGORIES";
-            // 
-            // SidebarCategoriesPic
-            // 
-            this.SidebarCategoriesPic.Image = ((System.Drawing.Image)(resources.GetObject("SidebarCategoriesPic.Image")));
-            this.SidebarCategoriesPic.Location = new System.Drawing.Point(3, 3);
-            this.SidebarCategoriesPic.Name = "SidebarCategoriesPic";
-            this.SidebarCategoriesPic.Size = new System.Drawing.Size(33, 39);
-            this.SidebarCategoriesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SidebarCategoriesPic.TabIndex = 0;
-            this.SidebarCategoriesPic.TabStop = false;
-            // 
-            // CustomerPanel
-            // 
-            this.CustomerPanel.Controls.Add(this.SidebarCustomer);
-            this.CustomerPanel.Controls.Add(this.SidebarCustomerPic);
-            this.CustomerPanel.Location = new System.Drawing.Point(28, 298);
-            this.CustomerPanel.Name = "CustomerPanel";
-            this.CustomerPanel.Size = new System.Drawing.Size(207, 46);
-            this.CustomerPanel.TabIndex = 5;
-            // 
-            // SidebarCustomer
-            // 
-            this.SidebarCustomer.AutoSize = true;
-            this.SidebarCustomer.Location = new System.Drawing.Point(42, 19);
-            this.SidebarCustomer.Name = "SidebarCustomer";
-            this.SidebarCustomer.Size = new System.Drawing.Size(84, 16);
-            this.SidebarCustomer.TabIndex = 3;
-            this.SidebarCustomer.Text = "CUSTOMER";
-            // 
-            // SidebarCustomerPic
-            // 
-            this.SidebarCustomerPic.Image = ((System.Drawing.Image)(resources.GetObject("SidebarCustomerPic.Image")));
-            this.SidebarCustomerPic.Location = new System.Drawing.Point(3, 3);
-            this.SidebarCustomerPic.Name = "SidebarCustomerPic";
-            this.SidebarCustomerPic.Size = new System.Drawing.Size(33, 39);
-            this.SidebarCustomerPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SidebarCustomerPic.TabIndex = 0;
-            this.SidebarCustomerPic.TabStop = false;
             // 
             // groupBox1
             // 
@@ -388,6 +100,43 @@
             this.groupBox1.Size = new System.Drawing.Size(562, 251);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label9.Location = new System.Drawing.Point(303, 125);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 18);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Total Cost";
+            // 
+            // txtTotalCost
+            // 
+            this.txtTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtTotalCost.Location = new System.Drawing.Point(306, 146);
+            this.txtTotalCost.Name = "txtTotalCost";
+            this.txtTotalCost.Size = new System.Drawing.Size(210, 24);
+            this.txtTotalCost.TabIndex = 18;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label8.Location = new System.Drawing.Point(40, 127);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(94, 18);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Item Quantity";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtQuantity.Location = new System.Drawing.Point(44, 146);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(210, 24);
+            this.txtQuantity.TabIndex = 16;
+            this.txtQuantity.Leave += new System.EventHandler(this.txtQuantity_Leave);
             // 
             // label7
             // 
@@ -515,43 +264,6 @@
             this.lvOrderList.UseCompatibleStateImageBehavior = false;
             this.lvOrderList.View = System.Windows.Forms.View.Details;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label8.Location = new System.Drawing.Point(40, 127);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 18);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Item Quantity";
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtQuantity.Location = new System.Drawing.Point(44, 146);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(210, 24);
-            this.txtQuantity.TabIndex = 16;
-            this.txtQuantity.Leave += new System.EventHandler(this.txtQuantity_Leave);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label9.Location = new System.Drawing.Point(303, 125);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 18);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Total Cost";
-            // 
-            // txtTotalCost
-            // 
-            this.txtTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtTotalCost.Location = new System.Drawing.Point(306, 146);
-            this.txtTotalCost.Name = "txtTotalCost";
-            this.txtTotalCost.Size = new System.Drawing.Size(210, 24);
-            this.txtTotalCost.TabIndex = 18;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -595,7 +307,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.PrintBillBtn);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.txtBillInvoiceNum);
@@ -605,7 +317,6 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.DeleteBtn);
             this.groupBox3.Controls.Add(this.cboCustomers);
-            this.groupBox3.Controls.Add(this.UpdateBtn);
             this.groupBox3.Controls.Add(this.lvOrderList);
             this.groupBox3.Location = new System.Drawing.Point(833, 133);
             this.groupBox3.Name = "groupBox3";
@@ -613,48 +324,69 @@
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             // 
-            // DeleteBtn
+            // PrintBillBtn
             // 
-            this.DeleteBtn.BackColor = System.Drawing.Color.Red;
-            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
-            this.DeleteBtn.Location = new System.Drawing.Point(533, 229);
-            this.DeleteBtn.Name = "DeleteBtn";
-            this.DeleteBtn.Size = new System.Drawing.Size(138, 41);
-            this.DeleteBtn.TabIndex = 21;
-            this.DeleteBtn.Text = "Delete Item";
-            this.DeleteBtn.UseVisualStyleBackColor = false;
-            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
+            this.PrintBillBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.PrintBillBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.PrintBillBtn.ForeColor = System.Drawing.Color.White;
+            this.PrintBillBtn.Location = new System.Drawing.Point(533, 16);
+            this.PrintBillBtn.Name = "PrintBillBtn";
+            this.PrintBillBtn.Size = new System.Drawing.Size(138, 41);
+            this.PrintBillBtn.TabIndex = 23;
+            this.PrintBillBtn.Text = "Print Bill";
+            this.PrintBillBtn.UseVisualStyleBackColor = false;
+            this.PrintBillBtn.Click += new System.EventHandler(this.PrintBillBtn_Click);
             // 
-            // UpdateBtn
+            // label15
             // 
-            this.UpdateBtn.BackColor = System.Drawing.Color.Yellow;
-            this.UpdateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.UpdateBtn.ForeColor = System.Drawing.Color.Black;
-            this.UpdateBtn.Location = new System.Drawing.Point(389, 229);
-            this.UpdateBtn.Name = "UpdateBtn";
-            this.UpdateBtn.Size = new System.Drawing.Size(138, 41);
-            this.UpdateBtn.TabIndex = 20;
-            this.UpdateBtn.Text = "Update";
-            this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(15, 38);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(167, 22);
+            this.label15.TabIndex = 21;
+            this.label15.Text = "Invoice Number - ";
             // 
-            // label10
+            // label14
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label10.Location = new System.Drawing.Point(16, 226);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(118, 18);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "Customer Name";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(319, 627);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(104, 20);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Total Bill - ";
             // 
-            // cboCustomers
+            // txtBillInvoiceNum
             // 
-            this.cboCustomers.FormattingEnabled = true;
-            this.cboCustomers.Location = new System.Drawing.Point(19, 249);
-            this.cboCustomers.Name = "cboCustomers";
-            this.cboCustomers.Size = new System.Drawing.Size(210, 24);
-            this.cboCustomers.TabIndex = 20;
+            this.txtBillInvoiceNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBillInvoiceNum.Location = new System.Drawing.Point(192, 36);
+            this.txtBillInvoiceNum.Name = "txtBillInvoiceNum";
+            this.txtBillInvoiceNum.Size = new System.Drawing.Size(239, 28);
+            this.txtBillInvoiceNum.TabIndex = 20;
+            // 
+            // txtTotalBill
+            // 
+            this.txtTotalBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalBill.Location = new System.Drawing.Point(461, 621);
+            this.txtTotalBill.Name = "txtTotalBill";
+            this.txtTotalBill.Size = new System.Drawing.Size(210, 27);
+            this.txtTotalBill.TabIndex = 20;
+            this.txtTotalBill.Text = "0";
+            this.txtTotalBill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // SaveBillBtn
+            // 
+            this.SaveBillBtn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.SaveBillBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.SaveBillBtn.ForeColor = System.Drawing.Color.White;
+            this.SaveBillBtn.Location = new System.Drawing.Point(19, 614);
+            this.SaveBillBtn.Name = "SaveBillBtn";
+            this.SaveBillBtn.Size = new System.Drawing.Size(125, 38);
+            this.SaveBillBtn.TabIndex = 20;
+            this.SaveBillBtn.Text = "Save Bill";
+            this.SaveBillBtn.UseVisualStyleBackColor = false;
+            this.SaveBillBtn.Click += new System.EventHandler(this.SaveBillBtn_Click);
             // 
             // groupBox4
             // 
@@ -674,23 +406,70 @@
             this.groupBox4.TabIndex = 22;
             this.groupBox4.TabStop = false;
             // 
-            // label11
+            // txtPaymentType
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label11.Location = new System.Drawing.Point(13, 94);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(112, 18);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Payment Status";
+            this.txtPaymentType.AutoSize = true;
+            this.txtPaymentType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPaymentType.Location = new System.Drawing.Point(188, 18);
+            this.txtPaymentType.Name = "txtPaymentType";
+            this.txtPaymentType.Size = new System.Drawing.Size(101, 20);
+            this.txtPaymentType.TabIndex = 29;
+            this.txtPaymentType.Text = "No Choose";
             // 
-            // cboPaymentStatus
+            // radioEMoney
             // 
-            this.cboPaymentStatus.FormattingEnabled = true;
-            this.cboPaymentStatus.Location = new System.Drawing.Point(16, 117);
-            this.cboPaymentStatus.Name = "cboPaymentStatus";
-            this.cboPaymentStatus.Size = new System.Drawing.Size(210, 24);
-            this.cboPaymentStatus.TabIndex = 20;
+            this.radioEMoney.AutoSize = true;
+            this.radioEMoney.Location = new System.Drawing.Point(278, 48);
+            this.radioEMoney.Name = "radioEMoney";
+            this.radioEMoney.Size = new System.Drawing.Size(78, 20);
+            this.radioEMoney.TabIndex = 28;
+            this.radioEMoney.TabStop = true;
+            this.radioEMoney.Text = "Emoney";
+            this.radioEMoney.UseVisualStyleBackColor = true;
+            this.radioEMoney.CheckedChanged += new System.EventHandler(this.radioEMoney_CheckedChanged);
+            // 
+            // radioCard
+            // 
+            this.radioCard.AutoSize = true;
+            this.radioCard.Location = new System.Drawing.Point(145, 50);
+            this.radioCard.Name = "radioCard";
+            this.radioCard.Size = new System.Drawing.Size(57, 20);
+            this.radioCard.TabIndex = 27;
+            this.radioCard.TabStop = true;
+            this.radioCard.Text = "Card";
+            this.radioCard.UseVisualStyleBackColor = true;
+            this.radioCard.CheckedChanged += new System.EventHandler(this.radioCard_CheckedChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(19, 18);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(172, 20);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Paymemt Method - ";
+            // 
+            // radioCash
+            // 
+            this.radioCash.AutoSize = true;
+            this.radioCash.Location = new System.Drawing.Point(22, 52);
+            this.radioCash.Name = "radioCash";
+            this.radioCash.Size = new System.Drawing.Size(59, 20);
+            this.radioCash.TabIndex = 25;
+            this.radioCash.TabStop = true;
+            this.radioCash.Text = "Cash";
+            this.radioCash.UseVisualStyleBackColor = true;
+            this.radioCash.CheckedChanged += new System.EventHandler(this.radioCash_CheckedChanged);
+            // 
+            // InvoicedateTimePicker
+            // 
+            this.InvoicedateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InvoicedateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.InvoicedateTimePicker.Location = new System.Drawing.Point(429, 18);
+            this.InvoicedateTimePicker.Name = "InvoicedateTimePicker";
+            this.InvoicedateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.InvoicedateTimePicker.TabIndex = 24;
             // 
             // label12
             // 
@@ -710,133 +489,54 @@
             this.cboOrderStatus.Size = new System.Drawing.Size(210, 24);
             this.cboOrderStatus.TabIndex = 22;
             // 
-            // InvoicedateTimePicker
+            // label11
             // 
-            this.InvoicedateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InvoicedateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.InvoicedateTimePicker.Location = new System.Drawing.Point(429, 18);
-            this.InvoicedateTimePicker.Name = "InvoicedateTimePicker";
-            this.InvoicedateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.InvoicedateTimePicker.TabIndex = 24;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label11.Location = new System.Drawing.Point(13, 94);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(112, 18);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Payment Status";
             // 
-            // radioCash
+            // cboPaymentStatus
             // 
-            this.radioCash.AutoSize = true;
-            this.radioCash.Location = new System.Drawing.Point(22, 52);
-            this.radioCash.Name = "radioCash";
-            this.radioCash.Size = new System.Drawing.Size(59, 20);
-            this.radioCash.TabIndex = 25;
-            this.radioCash.TabStop = true;
-            this.radioCash.Text = "Cash";
-            this.radioCash.UseVisualStyleBackColor = true;
-            this.radioCash.CheckedChanged += new System.EventHandler(this.radioCash_CheckedChanged);
+            this.cboPaymentStatus.FormattingEnabled = true;
+            this.cboPaymentStatus.Location = new System.Drawing.Point(16, 117);
+            this.cboPaymentStatus.Name = "cboPaymentStatus";
+            this.cboPaymentStatus.Size = new System.Drawing.Size(210, 24);
+            this.cboPaymentStatus.TabIndex = 20;
             // 
-            // label13
+            // label10
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(19, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(172, 20);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Paymemt Method - ";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.label10.Location = new System.Drawing.Point(16, 226);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(118, 18);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Customer Name";
             // 
-            // radioCard
+            // DeleteBtn
             // 
-            this.radioCard.AutoSize = true;
-            this.radioCard.Location = new System.Drawing.Point(145, 50);
-            this.radioCard.Name = "radioCard";
-            this.radioCard.Size = new System.Drawing.Size(57, 20);
-            this.radioCard.TabIndex = 27;
-            this.radioCard.TabStop = true;
-            this.radioCard.Text = "Card";
-            this.radioCard.UseVisualStyleBackColor = true;
-            this.radioCard.CheckedChanged += new System.EventHandler(this.radioCard_CheckedChanged);
+            this.DeleteBtn.BackColor = System.Drawing.Color.Red;
+            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.DeleteBtn.Location = new System.Drawing.Point(533, 229);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(138, 41);
+            this.DeleteBtn.TabIndex = 21;
+            this.DeleteBtn.Text = "Delete Item";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
-            // radioEMoney
+            // cboCustomers
             // 
-            this.radioEMoney.AutoSize = true;
-            this.radioEMoney.Location = new System.Drawing.Point(278, 48);
-            this.radioEMoney.Name = "radioEMoney";
-            this.radioEMoney.Size = new System.Drawing.Size(78, 20);
-            this.radioEMoney.TabIndex = 28;
-            this.radioEMoney.TabStop = true;
-            this.radioEMoney.Text = "Emoney";
-            this.radioEMoney.UseVisualStyleBackColor = true;
-            this.radioEMoney.CheckedChanged += new System.EventHandler(this.radioEMoney_CheckedChanged);
-            // 
-            // SaveBillBtn
-            // 
-            this.SaveBillBtn.BackColor = System.Drawing.Color.DodgerBlue;
-            this.SaveBillBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.SaveBillBtn.ForeColor = System.Drawing.Color.White;
-            this.SaveBillBtn.Location = new System.Drawing.Point(19, 614);
-            this.SaveBillBtn.Name = "SaveBillBtn";
-            this.SaveBillBtn.Size = new System.Drawing.Size(125, 38);
-            this.SaveBillBtn.TabIndex = 20;
-            this.SaveBillBtn.Text = "Save Bill";
-            this.SaveBillBtn.UseVisualStyleBackColor = false;
-            this.SaveBillBtn.Click += new System.EventHandler(this.SaveBillBtn_Click);
-            // 
-            // txtTotalBill
-            // 
-            this.txtTotalBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalBill.Location = new System.Drawing.Point(461, 621);
-            this.txtTotalBill.Name = "txtTotalBill";
-            this.txtTotalBill.Size = new System.Drawing.Size(210, 27);
-            this.txtTotalBill.TabIndex = 20;
-            this.txtTotalBill.Text = "0";
-            this.txtTotalBill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(319, 627);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(104, 20);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Total Bill - ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(15, 38);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(167, 22);
-            this.label15.TabIndex = 21;
-            this.label15.Text = "Invoice Number - ";
-            // 
-            // txtBillInvoiceNum
-            // 
-            this.txtBillInvoiceNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBillInvoiceNum.Location = new System.Drawing.Point(192, 36);
-            this.txtBillInvoiceNum.Name = "txtBillInvoiceNum";
-            this.txtBillInvoiceNum.Size = new System.Drawing.Size(239, 28);
-            this.txtBillInvoiceNum.TabIndex = 20;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(533, 16);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(138, 41);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Print Bill";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // txtPaymentType
-            // 
-            this.txtPaymentType.AutoSize = true;
-            this.txtPaymentType.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaymentType.Location = new System.Drawing.Point(188, 18);
-            this.txtPaymentType.Name = "txtPaymentType";
-            this.txtPaymentType.Size = new System.Drawing.Size(101, 20);
-            this.txtPaymentType.TabIndex = 29;
-            this.txtPaymentType.Text = "No Choose";
+            this.cboCustomers.FormattingEnabled = true;
+            this.cboCustomers.Location = new System.Drawing.Point(19, 249);
+            this.cboCustomers.Name = "cboCustomers";
+            this.cboCustomers.Size = new System.Drawing.Size(210, 24);
+            this.cboCustomers.TabIndex = 20;
             // 
             // label16
             // 
@@ -858,37 +558,11 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmBilling";
             this.Text = "FrmBilling";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmBilling_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutPicture)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).EndInit();
-            this.DashboardPanel.ResumeLayout(false);
-            this.DashboardPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarDashboardPic)).EndInit();
-            this.ItemsPanel.ResumeLayout(false);
-            this.ItemsPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarItemsPic)).EndInit();
-            this.BillingPanel.ResumeLayout(false);
-            this.BillingPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarBillingPic)).EndInit();
-            this.CategoriesPanel.ResumeLayout(false);
-            this.CategoriesPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarCategoriesPic)).EndInit();
-            this.CustomerPanel.ResumeLayout(false);
-            this.CustomerPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarCustomerPic)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -904,32 +578,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button CloseBtn;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label LogoutLabel;
-        private System.Windows.Forms.PictureBox LogoutPicture;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label LogoLabel;
-        private System.Windows.Forms.PictureBox pboxLogo;
-        private System.Windows.Forms.Panel DashboardPanel;
-        private System.Windows.Forms.Label SidebarDashboard;
-        private System.Windows.Forms.PictureBox SidebarDashboardPic;
-        private System.Windows.Forms.Panel ItemsPanel;
-        private System.Windows.Forms.Label SidebarItems;
-        private System.Windows.Forms.PictureBox SidebarItemsPic;
-        private System.Windows.Forms.Panel BillingPanel;
-        private System.Windows.Forms.Label SidebarBilling;
-        private System.Windows.Forms.PictureBox SidebarBillingPic;
-        private System.Windows.Forms.Panel CategoriesPanel;
-        private System.Windows.Forms.Label SidebarCategories;
-        private System.Windows.Forms.PictureBox SidebarCategoriesPic;
-        private System.Windows.Forms.Panel CustomerPanel;
-        private System.Windows.Forms.Label SidebarCustomer;
-        private System.Windows.Forms.PictureBox SidebarCustomerPic;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cboItems;
@@ -955,7 +603,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.ComboBox cboCustomers;
-        private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.RadioButton radioCash;
         private System.Windows.Forms.DateTimePicker InvoicedateTimePicker;
@@ -969,7 +616,7 @@
         private System.Windows.Forms.RadioButton radioEMoney;
         private System.Windows.Forms.RadioButton radioCard;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button PrintBillBtn;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtBillInvoiceNum;
         private System.Windows.Forms.Label txtPaymentType;

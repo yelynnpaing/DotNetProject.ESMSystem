@@ -24,7 +24,7 @@ namespace ESMSystem.Views
 
         void Connection()
         {
-            str = "Data Source=DESKTOP-L3SMK21\\SQLEXPRESS;Initial Catalog=ElectronicsDb;Persist Security Info=True;User ID=sa;Password=sasa@123";
+            str = "Data Source=DESKTOP-L3SMK21\\SQLEXPRESS;Initial Catalog=ElectronicInventoryManagementSystemDb;Persist Security Info=True;User ID=sa;Password=sasa@123";
             consql = new SqlConnection(str);
             consql.Open();
         }

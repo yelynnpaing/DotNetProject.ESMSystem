@@ -36,9 +36,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.LogoLabel = new System.Windows.Forms.Label();
             this.pboxLogo = new System.Windows.Forms.PictureBox();
-            this.DashboardPanel = new System.Windows.Forms.Panel();
-            this.SidebarDashboard = new System.Windows.Forms.Label();
-            this.SidebarDashboardPic = new System.Windows.Forms.PictureBox();
             this.ItemsPanel = new System.Windows.Forms.Panel();
             this.SidebarItems = new System.Windows.Forms.Label();
             this.SidebarItemsPic = new System.Windows.Forms.PictureBox();
@@ -60,8 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.LogoutPicture)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).BeginInit();
-            this.DashboardPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarDashboardPic)).BeginInit();
             this.ItemsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SidebarItemsPic)).BeginInit();
             this.BillingPanel.SuspendLayout();
@@ -78,7 +73,6 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.DashboardPanel);
             this.panel1.Controls.Add(this.ItemsPanel);
             this.panel1.Controls.Add(this.BillingPanel);
             this.panel1.Controls.Add(this.CategoriesPanel);
@@ -149,34 +143,6 @@
             this.pboxLogo.TabIndex = 0;
             this.pboxLogo.TabStop = false;
             this.pboxLogo.Click += new System.EventHandler(this.pboxLogo_Click);
-            // 
-            // DashboardPanel
-            // 
-            this.DashboardPanel.Controls.Add(this.SidebarDashboard);
-            this.DashboardPanel.Controls.Add(this.SidebarDashboardPic);
-            this.DashboardPanel.Location = new System.Drawing.Point(28, 402);
-            this.DashboardPanel.Name = "DashboardPanel";
-            this.DashboardPanel.Size = new System.Drawing.Size(207, 46);
-            this.DashboardPanel.TabIndex = 7;
-            // 
-            // SidebarDashboard
-            // 
-            this.SidebarDashboard.AutoSize = true;
-            this.SidebarDashboard.Location = new System.Drawing.Point(42, 13);
-            this.SidebarDashboard.Name = "SidebarDashboard";
-            this.SidebarDashboard.Size = new System.Drawing.Size(118, 20);
-            this.SidebarDashboard.TabIndex = 3;
-            this.SidebarDashboard.Text = "DASHBOARD";
-            // 
-            // SidebarDashboardPic
-            // 
-            this.SidebarDashboardPic.Image = ((System.Drawing.Image)(resources.GetObject("SidebarDashboardPic.Image")));
-            this.SidebarDashboardPic.Location = new System.Drawing.Point(3, 3);
-            this.SidebarDashboardPic.Name = "SidebarDashboardPic";
-            this.SidebarDashboardPic.Size = new System.Drawing.Size(33, 39);
-            this.SidebarDashboardPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SidebarDashboardPic.TabIndex = 0;
-            this.SidebarDashboardPic.TabStop = false;
             // 
             // ItemsPanel
             // 
@@ -335,7 +301,7 @@
             // 
             this.MainPanel.Location = new System.Drawing.Point(0, 0);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1555, 881);
+            this.MainPanel.Size = new System.Drawing.Size(1528, 881);
             this.MainPanel.TabIndex = 2;
             // 
             // FrmDashboard
@@ -349,6 +315,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "FrmDashboard";
             this.Text = "FrmDashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -359,9 +326,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLogo)).EndInit();
-            this.DashboardPanel.ResumeLayout(false);
-            this.DashboardPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SidebarDashboardPic)).EndInit();
             this.ItemsPanel.ResumeLayout(false);
             this.ItemsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SidebarItemsPic)).EndInit();
@@ -390,9 +354,6 @@
         private System.Windows.Forms.Panel CategoriesPanel;
         private System.Windows.Forms.Label SidebarCategories;
         private System.Windows.Forms.PictureBox SidebarCategoriesPic;
-        private System.Windows.Forms.Panel DashboardPanel;
-        private System.Windows.Forms.Label SidebarDashboard;
-        private System.Windows.Forms.PictureBox SidebarDashboardPic;
         private System.Windows.Forms.Panel BillingPanel;
         private System.Windows.Forms.Label SidebarBilling;
         private System.Windows.Forms.PictureBox SidebarBillingPic;

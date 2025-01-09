@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ESMSystem.Print;
+using ESMSystem.Reports;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +28,7 @@ namespace ESMSystem.Views
 
         private void Connection()
         {
-            str = "Data Source=DESKTOP-L3SMK21\\SQLEXPRESS;Initial Catalog=ElectronicsDb;Persist Security Info=True;" +
+            str = "Data Source=DESKTOP-L3SMK21\\SQLEXPRESS;Initial Catalog=ElectronicInventoryManagementSystemDb;Persist Security Info=True;" +
                 "User ID=sa;Password=sasa@123";
             consql = new SqlConnection(str);
             consql.Open();
@@ -305,6 +307,37 @@ namespace ESMSystem.Views
             {
                 MessageBox.Show("Something wrong", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void PrintBillBtn_Click(object sender, EventArgs e)
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("#", typeof(string));
+            dt.Columns.Add("Item Name", typeof(string));
+            dt.Columns.Add("Unit Price", typeof(decimal));
+            dt.Columns.Add("Quantity", typeof(Int32));
+            dt.Columns.Add("Total", typeof(decimal));
+           
+            foreach (ListViewItem item in lvOrderList.Items)
+            {
+                DataRow row = dt.NewRow();
+                for(int i = 0; i < item.SubItems.Count; i++)
+                {
+                    row[i] = item.SubItems[i].Text;
+                }
+                dt.Rows.Add(row);
+            }
+
+            ds.Tables.Add(dt);
+            ds.WriteXmlSchema("BillReport.xml");
+
+            FrmPrintBill frmPrintBill = new FrmPrintBill();
+            PrintBillCrystalReport printBillCrystalReport = new PrintBillCrystalReport();
+            printBillCrystalReport.SetDataSource(ds);
+            frmPrintBill.BillingCrystalReportViewer.ReportSource = printBillCrystalReport;
+            frmPrintBill.BillingCrystalReportViewer.Refresh();
+            frmPrintBill.ShowDialog();
         }
     }
 }
